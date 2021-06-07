@@ -1,0 +1,98 @@
+@import "../../node_modules/bootstrap/scss/bootstrap"
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,700&display=swap')
+
+// colors
+$text-color: #000
+$primary-color: #3f4f73
+$primary-color-light: #7bb5fe
+$primary-color-dakr: #293446
+$secondary-color: #dc9e0f
+$secondary-color-light: #e5bb59
+$secondary-color-dark: #634f36
+$link-color: #000
+$red: #823c44
+
+$ff: Merriweather
+
+body
+
+    height: 100%
+    width: 100%
+    color: rgba($text-color, .85)
+
+a
+    color: $link-color
+
+a:hover
+    color: $red
+
+nav
+    background-color: rgba(255, 255, 255, .1)
+    color: $text-color
+    font-weight: 600
+    font-size: 1.1em
+    letter-spacing: 1px
+
+h1
+    font-weight: 700
+    font-size: 1.3em
+    line-height: 1.6em
+    // letter-spacing: 1px
+    color: rgba($text-color, .7)
+    margin-bottom: 1.3em
+    @media (max-width: 360px)
+        margin-bottom: .5em
+    padding: .1em 0
+    @include media-breakpoint-up(md)
+        margin-bottom: 1.5em
+        font-size: 1.6em
+
+hr
+    color: $red
+    width: 4em
+    border-top: solid 3px
+
+.fixed-top 
+        background-color: $secondary-color-light
+        top: -40px
+        transform: translateY(40px)
+        transition: transform .3s
+
+
+#title, #info, #gear, #discography
+    padding: 100px 1em
+    min-height: 100vh
+    font-family: $ff
+    font-size: 1.1em
+    line-height: 1.45em
+    b
+        font-style: italic
+        font-weight: 700
+
+#title 
+    margin-top: -59px
+    background: linear-gradient(160deg, rgba(white, .5) 35%,rgba(white, .65) ), url(../images/8R0A1091.jpg)
+#info
+    background-color: $primary-color 
+
+#gear
+    background-color: $secondary-color-light
+
+#discography 
+    background-color: $primary-color-light
+
+#photos
+    .container-fluid
+        padding-left: 0
+        padding-right: 0
+
+
+#footer
+    height: 100px 
+    font-size: 0.9em
+    padding: 40px 1em 9px
+    @include media-breakpoint-up(md)
+        font-size: 1em
+    a   
+        color: $text-color

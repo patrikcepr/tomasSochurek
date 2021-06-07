@@ -1,0 +1,8 @@
+#node files
+/node_modules/*
+
+#sass cache files
+/.sass-cache/*
+
+#source images
+/src/graphics/*
