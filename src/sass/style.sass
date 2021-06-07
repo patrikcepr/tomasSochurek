@@ -56,9 +56,13 @@ hr
     border-top: solid .2em
 
 
-.navbar-nav
+.navbar-nav .nav-link
     text-transform: uppercase
     font-size: 1rem
+    &:hover
+        color: $red !important
+        text-decoration: none
+        transition: color .5s ease
 
 .navbar-light
     background-color: $secondary-color-light !important
@@ -70,9 +74,6 @@ hr
     top: -40px
     transform: translateY(40px)
     transition: transform .3s ease
-
-.navbar-toggler .collapsed
-    border: solid 1px #000
 
 #title, #info, #gear, #discography
     padding: 100px 1em
