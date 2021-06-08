@@ -1,5 +1,3 @@
-console.log("Higher baby");
-
 //menu hide and show
 document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", function () {
@@ -19,4 +17,31 @@ document.addEventListener("DOMContentLoaded", function () {
 // collapse menu on click
 $(".navbar-nav>li>a").on("click", function () {
   $(".navbar-collapse").collapse("hide");
+});
+
+// smooth scrolling
+var scroll = new SmoothScroll('a[href*="#"]', {
+  // Selectors
+  // ignore: "[data-scroll-ignore]",
+  header: "#navbar-top",
+  topOnEmptyHash: true,
+
+  // Speed & Duration
+  speed: 500,
+  speedAsDuration: false,
+  // durationMax: null,
+  // durationMin: null,
+  // clip: true,
+  // offset: 0,
+
+  // Easing
+  easing: "easeInOutCubic",
+  // customEasing: null,
+
+  // History
+  updateURL: true,
+  popstate: true,
+
+  // Custom Events
+  // emitEvents: true,
 });
