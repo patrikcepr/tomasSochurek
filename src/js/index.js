@@ -22,9 +22,9 @@ $(".navbar-nav>li>a").on("click", function () {
 // smooth scrolling
 var scroll = new SmoothScroll('a[href*="#"]', {
   // Selectors
-  // ignore: "[data-scroll-ignore]",
+  ignore: "[data-scroll-ignore]",
   header: "#navbar-top",
-  topOnEmptyHash: true,
+  // topOnEmptyHash: true,
 
   // Speed & Duration
   speed: 500,

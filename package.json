@@ -13,7 +13,7 @@
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^4.6.0",
     "cacache": "^15.2.0",
-    "core-js": "^3.13.1",
+    "core-js": "^3.14.0",
     "jquery": "^3.6.0",
     "lodash": "^4.17.21",
     "lodash.template": "^4.5.0",
