@@ -15,15 +15,15 @@ $red: #823c44
 
 $ff: Merriweather
 
-// html
-    // scroll-behavior: smooth
+html
+    scroll-behavior: smooth
 
 body
     height: 100%
     width: 100%
-    padding-top: 70px
-    @include media-breakpoint-down(sm)
-        padding-top: 0
+    // padding-top: 60
+    // @include media-breakpoint-down(md)
+        // padding-top: 116px !important
     color: rgba($text-color, .85)
 
 a
@@ -77,16 +77,18 @@ hr
     @include media-breakpoint-up(md)
       background-color: rgba(255, 255, 255, 0) !important
 
-.fixed-top 
+.add-color
     background-color: $secondary-color-light !important
-    top: -40px
-    transform: translateY(40px)
-    transition: transform .3s ease
+    top: -60px
+    transform: translateY(60px)
+    transition: transform .5s ease
 
 #title, #info, #gear, #discography
-    padding: 100px 1em
-    min-height: 100vh
+    padding: 150px 1em
+    // min-height: 100vh
+    scroll-margin-top: 56px
     @include media-breakpoint-down(md)
+      padding: 100px 1em
       height: auto
     font-family: $ff
     font-size: 1.1em
@@ -96,8 +98,10 @@ hr
         font-weight: 700
 
 #title 
-    margin-top: -60px
+    margin-top: -56px
+    padding-top: 206px
     background: linear-gradient(160deg, rgba(white, .58) 35%,rgba(white, .75) ), url(../images/8R0A1091.jpg)
+
 #info
     background-color: $primary-color 
 
@@ -113,9 +117,7 @@ hr
         padding-right: 0
 
 #footer
-    padding: 40px 1em 40px
-    @include media-breakpoint-up(md)
-        height: 100px 
+    padding: 40px 1em
     font-size: 1em
     @include media-breakpoint-up(md)
         font-size: 1.1em
