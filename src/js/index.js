@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // add class
       document.getElementById("navbar_top").classList.add("add-color");
     } else {
+      // remove class
       document.getElementById("navbar_top").classList.remove("add-color");
     }
   });

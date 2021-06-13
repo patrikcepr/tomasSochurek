@@ -2,5 +2,5 @@
 /*!*************************!*\
   !*** ./src/js/index.js ***!
   \*************************/
-/*! no static exports found */function(module,exports){eval('//menu hide and show\ndocument.addEventListener("DOMContentLoaded", function () {\n  window.addEventListener("scroll", function () {\n    if (window.scrollY > 150) {\n      // add class\n      document.getElementById("navbar_top").classList.add("add-color");\n    } else {\n      document.getElementById("navbar_top").classList.remove("add-color");\n    }\n  });\n}); // collapse menu on click\n\n$(".navbar-nav>li>a").on("click", function () {\n  $(".navbar-collapse").collapse("hide");\n});\n\n//# sourceURL=webpack:///./src/js/index.js?')}});
+/*! no static exports found */function(module,exports){eval('//menu hide and show\ndocument.addEventListener("DOMContentLoaded", function () {\n  window.addEventListener("scroll", function () {\n    if (window.scrollY > 150) {\n      // add class\n      document.getElementById("navbar_top").classList.add("add-color");\n    } else {\n      // remove class\n      document.getElementById("navbar_top").classList.remove("add-color");\n    }\n  });\n}); // collapse menu on click\n\n$(".navbar-nav>li>a").on("click", function () {\n  $(".navbar-collapse").collapse("hide");\n});\n\n//# sourceURL=webpack:///./src/js/index.js?')}});
 //# sourceMappingURL=index.js.map

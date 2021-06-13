@@ -1,0 +1,67 @@
+@import ../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss
+@import ../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss
+@import ../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss
+@import ../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss
+@import ../../node_modules/@fortawesome/fontawesome-free/scss/_variables.scss
+
+$icon-color: #000
+
+.icon_size
+    font-size: 1.5em
+    vertical-align: middle
+    color: $icon-color
+    background-color: rgba(255, 255, 255, .6)
+    border-radius: 50%
+    padding: .4em
+    margin: .2em .3em .2em 0
+    width: 2em
+    height: 2em
+    text-align: center
+    border: 3px solid $icon-color
+
+.heartempty_icon
+    @extend %fa-icon
+    @extend .far
+    @extend .icon_size
+    padding-top: .45em
+    &:before
+        content: fa-content($fa-var-heart)
+
+.heartbroken_icon
+    @extend %fa-icon
+    @extend .fas
+    @extend .icon_size
+    padding-top: .45em
+    // color: lighten($text-color, 20%)
+    &:before
+        content: fa-content($fa-var-heart-broken)
+
+.work_icon
+    @extend %fa-icon
+    @extend .fas
+    @extend .icon_size
+    &:before
+        content: fa-content($fa-var-briefcase)
+
+.useless_icon
+    @extend %fa-icon
+    @extend .fas
+    @extend .icon_size
+    padding-left: .33em
+    padding-top: .4em
+    &:before
+        content: fa-content($fa-var-battery-empty)
+
+.lifering_icon
+    @extend %fa-icon
+    @extend .far
+    @extend .icon_size
+    border: none
+    font-size: 2.5em
+    margin: 0
+    height: auto
+    width: auto
+    padding: 0 0 0 .4em
+    &:before
+        content: fa-content($fa-var-life-ring)
+
